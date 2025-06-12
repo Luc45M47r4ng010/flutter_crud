@@ -22,11 +22,6 @@ class LoginController {
     }
   }
 
-  // Future<void> _saveToken(String token) async {
-  //   final prefs = await SharedPreferences.getInstance();
-  //   await prefs.setString('auth_token', token);
-  // }
-
   String? validateEmail(String? value) {
     if (value == null || value.isEmpty) return 'Digite um e-mail';
     if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w]{2,4}$').hasMatch(value)) {
